@@ -1,0 +1,32 @@
+
+1. 캐릭터 키보드 입력받아 이동
+2. 카메라가 캐릭터 따라가게 하고 애니메이션 추가>
+공유폴더 - 스탠다드에셋 임포트
+
+우클릭 - 3d오브젝트 - terrain-_terrain 5번째 아이콘- w,h 400씩
+
+terrain-_terrain 2번째 아이콘_paint Texture + edit terrain layer 선택 + create layer + sand, grass
+
+terrain-_terrain 2번째 - Raise or Lower Terrain으로 높낮이 조절
+
+terrain-_terrain 3번째
+
+캐릭터 누르고 select누르고 materials 클릭하고 location에서 use External~하고 apply
+
+Rig - avata def - create fom this model
+
+애니메이터컨트롤러 생성 - 애니메이터창에서 우클릭 - create - from new blend tree(이름: Move&Idle) 생성.
+
+Layer에서 posX, posY 만들기
+
+Move&Idle더블 클릭 후 블랜드 타입  2d simple directional + parameters posx, posy로 설정
+
+addMotionFiled 5개 만들어서 idel, standing walk forward, standing walk back, standing walk left, standing walk right 넣고 좌표 설정 
+
+스크립트 생성 후 캐릭터 안으로 넣음
+
+--스크립트 수정--
+
+<카메라가 캐릭터를 따라가게 하기>
+standard asset - utility - smoothfollow를 메인카메라에 넣음
+
